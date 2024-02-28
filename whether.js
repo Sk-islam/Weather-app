@@ -17,20 +17,20 @@
         }
         else{
             if(data.weather[0].main == "Clouds"){
-                icon.src = "/clouds.png";
+                icon.src = "clouds.png";
             }
         
             else if(data.weather[0] == "Clear"){
-                icon.src = "/clear.png";
+                icon.src = "clear.png";
             }
             else if(data.weather[0] == "Rain"){
-                icon.src = "/rain.png";
+                icon.src = "rain.png";
             }
             else if(data.weather[0] == "Drizzle"){
-                icon.src = "/drizzle.png";
+                icon.src = "drizzle.png";
             }
             else if(data.weather[0] == "Mist"){
-                icon.src = "/mist.png";
+                icon.src = "mist.png";
             }
 
         }
@@ -43,20 +43,20 @@
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
         if(data.weather[0].main == "Clouds"){
-            icon.src = "/clouds.png";
+            icon.src = "clouds.png";
         }
 
         else if(data.weather[0] == "Clear"){
-            icon.src = "/clear.png";
+            icon.src = "clear.png";
         }
         else if(data.weather[0] == "Rain"){
-            icon.src = "/rain.png";
+            icon.src = "rain.png";
         }
         else if(data.weather[0] == "Drizzle"){
-            icon.src = "/drizzle.png";
+            icon.src = "drizzle.png";
         }
         else if(data.weather[0] == "Mist"){
-            icon.src = "/mist.png";
+            icon.src = "mist.png";
         }
 
         document.querySelector(".whether").style.display = "block";
