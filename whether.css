@@ -107,6 +107,16 @@
         display: none;
     }
 
+
+    .container{
+        margin-top: 50px;
+        display: none;
+    }
+
+    .clock span{
+        font-size: 1.6rem;
+    }
+
     @media screen and (max-width: 768px) {
         .search input{
             width: 150px;
