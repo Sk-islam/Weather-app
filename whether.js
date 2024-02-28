@@ -1,5 +1,9 @@
     const apikey = "aeb5e25c39cbadf727fa2bfaa9a71bd2";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+ const content = document.getElementById("container");
+    let hrs = document.getElementById("hrs");
+    let min = document.getElementById("min");
+    let sec = document.getElementById("sec");
 
     const searchBox = document.querySelector(".search input");
     const searchBtn = document.querySelector(".search button");
@@ -61,8 +65,19 @@
 
         document.querySelector(".whether").style.display = "block";
         document.querySelector(".error").style.display = "none";
+        document.querySelector(".container").style.display = "block";
 
     }
+
+setInterval(()=>{
+        let currentTime = new Date();
+    
+    hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
+    min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+    sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+    
+    },1000)
+
 
     searchBtn.addEventListener('click',()=>{
         checkWether(searchBox.value);  
