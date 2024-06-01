@@ -71,7 +71,6 @@
 
 setInterval(()=>{
         let currentTime = new Date();
-        let currentTime = new Date();
         let time = currentTime.toLocaleString();
         clock.innerHTML =time;
     
